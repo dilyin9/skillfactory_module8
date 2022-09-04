@@ -1,0 +1,20 @@
+.viewpager {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+p {
+  align-self: center;
+}
+
+.slider_block {
+  position: relative;
+}
+
+.left_button , .right_button {
+  position: absolute;
+}
+
+.left_arrow {
+  background: url('/images/left-arrow.png');
+}
