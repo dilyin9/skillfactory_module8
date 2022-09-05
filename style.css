@@ -1,3 +1,6 @@
+body * {
+  font-family: 'Roboto Mono', monospace;
+}
 .viewpager {
   display: flex;
   flex-direction: column;
@@ -5,16 +8,52 @@
 }
 p {
   align-self: center;
+  font-size: 30px;
 }
 
 .slider_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  width: 500px;
+  height: 600px;
+  align-self: center;
+}
+.slider_block.clicked{
+  animation-name: blink;
+  animation-duration: 1.5s;
 }
 
-.left_button , .right_button {
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.changer {
+  cursor: pointer;
   position: absolute;
+  font-size: 40px;
+  background: inherit;
+}
+.changer:hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(134, 130, 136, 0.8);
 }
 
 .left_arrow {
-  background: url('/images/left-arrow.png');
+  left: 0;
+}
+
+.right_arrow {
+  right: 0;
 }
